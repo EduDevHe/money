@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![TYPESCRIPT](https://img.shields.io/static/v1?label=TYPESCRIPT&labelColor=19ca50&message=TS&color=000000&logo=TYPESCRIPT&logoColor=000&style=flat-square)
+![REACT](https://img.shields.io/static/v1?label=REACT&labelColor=19ca50&message=TS&color=000000&logo=REACT&logoColor=000&style=flat-square)
+![NEXT.JS](https://img.shields.io/static/v1?label=NEXT&labelColor=19ca50&message=JS&color=000000&logo=NEXT.JS&logoColor=000&style=flat-square)
+![POSTCSS](https://img.shields.io/static/v1?label=POSTCSS&labelColor=19ca50&message=PLUGINS&color=000000&logo=POSTCSS&logoColor=000&style=flat-square)
+![CYPRESS](https://img.shields.io/static/v1?label=CYPRESS&labelColor=19ca50&message=TESTS&color=000000&logo=CYPRESS&logoColor=000&style=flat-square)
+![STYLELINT](https://img.shields.io/static/v1?label=STYLELINT&labelColor=19ca50&message=+FIX&color=000000&logo=STYLELINT&logoColor=000&style=flat-square)
+![ESLINT](https://img.shields.io/static/v1?label=ESLINT&labelColor=19ca50&message=+FIX&color=000000&logo=ESLINT&logoColor=000&style=flat-square)
+![PRETTIER](https://img.shields.io/static/v1?label=PRETTIER&labelColor=19ca50&message=FORMAT&color=000000&logo=PRETTIER&logoColor=000&style=flat-square)
 
-## Getting Started
+## INICIANDO O PROJETO
 
-First, run the development server:
+- Instale as dependências
+
+```bash
+npm install
+# ou
+pnpm install
+```
+
+- Execute o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
+# ou
+pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Execute os testes (abre o Cypress app)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run tests
+# ou
+pnpm run tests
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o aplicativo.
