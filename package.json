@@ -29,6 +29,7 @@
 		"eslint-config-prettier": "^8.5.0",
 		"prettier": "^2.6.2",
 		"stylelint": "^14.8.5",
+		"stylelint-config-css-modules": "^4.1.0",
 		"stylelint-config-prettier": "^9.0.3",
 		"stylelint-config-standard": "^25.0.0",
 		"typescript": "4.7.2"

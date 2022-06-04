@@ -18,6 +18,7 @@ specifiers:
   react: 18.1.0
   react-dom: 18.1.0
   stylelint: ^14.8.5
+  stylelint-config-css-modules: ^4.1.0
   stylelint-config-prettier: ^9.0.3
   stylelint-config-standard: ^25.0.0
   typescript: 4.7.2
@@ -42,6 +43,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.16.0
   prettier: 2.6.2
   stylelint: 14.8.5
+  stylelint-config-css-modules: 4.1.0_stylelint@14.8.5
   stylelint-config-prettier: 9.0.3_stylelint@14.8.5
   stylelint-config-standard: 25.0.0_stylelint@14.8.5
   typescript: 4.7.2
@@ -3559,6 +3561,16 @@ packages:
     dependencies:
       react: 18.1.0
 
+  /stylelint-config-css-modules/4.1.0_stylelint@14.8.5:
+    resolution: {integrity: sha512-w6d552NscwvpUEaUcmq8GgWXKRv6lVHLbDj6QIHSM2vCWr83qRqRvXBJCfXDyaG/J3Zojw2inU9VvU99ZlXuUw==}
+    peerDependencies:
+      stylelint: ^14.5.1
+    dependencies:
+      stylelint: 14.8.5
+    optionalDependencies:
+      stylelint-scss: 4.2.0_stylelint@14.8.5
+    dev: true
+
   /stylelint-config-prettier/9.0.3_stylelint@14.8.5:
     resolution: {integrity: sha512-5n9gUDp/n5tTMCq1GLqSpA30w2sqWITSSEiAWQlpxkKGAUbjcemQ0nbkRvRUa0B1LgD3+hCvdL7B1eTxy1QHJg==}
     engines: {node: '>= 12'}
@@ -3585,6 +3597,21 @@ packages:
       stylelint: 14.8.5
       stylelint-config-recommended: 7.0.0_stylelint@14.8.5
     dev: true
+
+  /stylelint-scss/4.2.0_stylelint@14.8.5:
+    resolution: {integrity: sha512-HHHMVKJJ5RM9pPIbgJ/XA67h9H0407G68Rm69H4fzFbFkyDMcTV1Byep3qdze5+fJ3c0U7mJrbj6S0Fg072uZA==}
+    requiresBuild: true
+    peerDependencies:
+      stylelint: ^14.5.1
+    dependencies:
+      lodash: 4.17.21
+      postcss-media-query-parser: 0.2.3
+      postcss-resolve-nested-selector: 0.1.1
+      postcss-selector-parser: 6.0.10
+      postcss-value-parser: 4.2.0
+      stylelint: 14.8.5
+    dev: true
+    optional: true
 
   /stylelint/14.8.5:
     resolution: {integrity: sha512-e3t4H/hlWlspkcNUrkhf44RU3OpPTA7uBOoREGBzSwdEF+2g/+gbZq7WEpMP7BpopcSe/uLaTvDuL+URL7cdnQ==}
