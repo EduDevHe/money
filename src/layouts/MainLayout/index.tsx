@@ -10,6 +10,7 @@ function MainLayout({ children }: Props) {
 	return (
 		<div className={styles.container}>
 			<NavBar />
+			<div className={styles.content}>{children}</div>
 		</div>
 	);
 }
