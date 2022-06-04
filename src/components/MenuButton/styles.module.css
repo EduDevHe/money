@@ -6,12 +6,20 @@
 	padding: 0.5rem;
 	background-color: var(--primary-dark);
 	color: var(--on-primary-dark);
+	height: var(--size-8);
 
 	&:hover {
 		animation: var(--animation-blink);
 	}
 
 	@media screen and (max-width: 990px) {
-		display: block;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	& h1 {
+		font-size: var(--font-size-3);
+		font-weight: 600;
 	}
 }

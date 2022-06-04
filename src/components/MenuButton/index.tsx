@@ -13,6 +13,7 @@ function MenuButton({ open, ...rest }: Props) {
 
 	return (
 		<button {...rest} className={styles.menuButton}>
+			<h1>Gastos</h1>
 			{open ? <Open /> : <Closed />}
 		</button>
 	);
