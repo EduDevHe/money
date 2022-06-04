@@ -1,0 +1,17 @@
+.menuButton {
+	cursor: pointer;
+	display: none;
+	top: 1rem;
+	right: 1rem;
+	padding: 0.5rem;
+	background-color: var(--primary-dark);
+	color: var(--on-primary-dark);
+
+	&:hover {
+		animation: var(--animation-blink);
+	}
+
+	@media screen and (max-width: 990px) {
+		display: block;
+	}
+}

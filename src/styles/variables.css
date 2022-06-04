@@ -1,1 +1,31 @@
 @import "open-props/postcss/style";
+
+:root {
+	/* PRIMARY */
+	--primary: var(--gray-7);
+	--on-primary: var(--gray-1);
+
+	/* PRIMARY LIGHT */
+	--primary-light: var(--gray-4);
+	--on-primary-light: var(--gray-8);
+
+	/* PRIMARY DARK */
+	--primary-dark: var(--gray-9);
+	--on-primary-dark: var(--gray-1);
+
+	/* SECONDARY */
+	--secondary: var(--green-4);
+	--on-secondary: var(--gray-8);
+
+	/* SECONDARY LIGHT */
+	--secondary-light: var(--green-2);
+	--on-secondary-light: var(--gray-9);
+
+	/* SECONDARY DARK */
+	--secondary-dark: var(--gray-1);
+	--on-secondary-dark: var(--gray-5);
+
+	/* BACKGROUND DARK */
+	--background: var(--gray-1);
+	--on-background: var(--gray-8);
+}

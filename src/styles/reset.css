@@ -75,3 +75,8 @@ td,
 th {
 	padding: 0;
 }
+
+button {
+	box-shadow: none;
+	border: none;
+}
