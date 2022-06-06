@@ -1,0 +1,18 @@
+.item {
+	display: flex;
+	max-width: 100%;
+	align-items: center;
+	font-weight: 600;
+	gap: var(--size-1);
+	font-size: var(--fluid-font-size-3);
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--radius-round);
+	background-color: var(--red-4);
+	width: var(--size-8);
+	aspect-ratio: var(--ratio-square);
+}

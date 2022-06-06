@@ -1,0 +1,12 @@
+.list {
+	display: flex;
+	max-width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	padding: var(--size-2) var(--size-2);
+	border-radius: var(--radius-2);
+	background-color: var(--secondary);
+	color: var(--on-secondary);
+	font-weight: 600;
+	font-size: var(--fluid-font-size-3);
+}
