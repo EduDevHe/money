@@ -1,0 +1,21 @@
+.container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: var(--size-1) solid var(--surface);
+	padding: 1rem;
+
+	@media screen and (min-width: 990px) {
+		width: 100%;
+	}
+}
+
+.graphContainer {
+	width: 100%;
+	max-width: 38rem;
+
+	@media screen and (min-width: 990px) {
+		min-width: 100%;
+	}
+}

@@ -10,11 +10,11 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 function Input({ name, label, icon, ...rest }: InputProps) {
 	return (
 		<div className={styles.container}>
-			<label htmlFor={name} className={styles.label}>
+			<label className="text--1" htmlFor={name}>
 				{label}:
 			</label>
 			<div className={styles.inputContainer}>
-				{icon && <span>{icon}</span>}
+				{icon && <span className={styles.icon}>{icon}</span>}
 				<input
 					type="number"
 					name={name}

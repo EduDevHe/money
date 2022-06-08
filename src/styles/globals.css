@@ -6,5 +6,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--secondary);
+	color: var(--on-primary);
+}
+
+.text--1 {
+	font-weight: 600;
+	font-size: var(--fluid-font-size-3);
+	color: var(--primary-dark);
 }

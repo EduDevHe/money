@@ -4,12 +4,11 @@
 	flex-direction: column;
 	gap: var(--size-2);
 	padding: var(--size-3) var(--size-2);
-	color: var(--on-secondary);
 	text-align: center;
 	font-weight: 600;
 	font-size: var(--fluid-font-size-3);
-	background-color: var(--secondary);
-	border-radius: var(--radius-2);
+	color: var(--on-primary);
+	background-color: var(--primary);
 
 	&:hover {
 		animation: var(--animation-zoom);

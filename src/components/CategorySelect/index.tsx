@@ -13,7 +13,7 @@ function CategorySelect(props: CategorySelectProps) {
 
 	return (
 		<div className={styles.container}>
-			<label htmlFor={name} className={styles.label}>
+			<label className="text--1" htmlFor={name}>
 				{label}:
 			</label>
 

@@ -1,80 +1,32 @@
 import { InferGetServerSidePropsType } from "next";
-import { Button } from "../../components/Button";
-import { ExpensesList } from "../../components/ExpensesList";
-import { ExpenseWarn } from "../../components/ExpenseWarn";
 import { Category } from "../../models/entities/Category";
 import { Expense } from "../../models/entities/Expense";
 import { CategoryRepository } from "../../models/repositories/CategoryRepository";
 import { ExpenseRepository } from "../../models/repositories/ExpenseRepository";
 import { lean } from "../../utils/Object";
+import { ExpensesHome } from "../../layouts/ExpensesHome";
 
-interface ExpensesProps {
+export interface ExpensesProps {
 	recentExpenses: Expense[];
 	topExpenses: Expense[];
 	categoryExpense: {
 		spentPercentage: number;
 		category: Category;
 	};
+	allCategories: Category[];
 }
 
 type ExpensesPage = InferGetServerSidePropsType<typeof getServerSideProps>;
 
 export default function Expenses(props: ExpensesPage) {
-	const { categoryExpense, recentExpenses, topExpenses } = props;
-
-	const category = categoryExpense.category;
-
-	return (
-		<>
-			<div data-cy="graph" className="">
-				Gráfico
-			</div>
-
-			<ExpensesList data-cy="last-expenses" expenses={recentExpenses} />
-			<ExpensesList data-cy="top-expenses" expenses={topExpenses} />
-
-			<ExpenseWarn data-cy="expense-warn" spent={0.35} category={category} />
-
-			<form action="/expense/new" method="post">
-				<div>
-					<label htmlFor="expense-value">Lorem, ipsum:</label>
-					<div>
-						<span>R$</span>
-						<input
-							data-cy="expense-value"
-							type="number"
-							name="expense-value"
-							id="expense-value"
-						/>
-					</div>
-				</div>
-
-				<div>
-					<label htmlFor="expense-category">Lorem:</label>
-
-					<div>
-						<select
-							data-cy="expense-category"
-							name="expense-category"
-							id="expense-category"
-						>
-							<option>Lorem, ipsum.</option>
-							<option>Lorem, ipsum.</option>
-							<option>Lorem, ipsum.</option>
-							<option>Lorem, ipsum.</option>
-							<option>Lorem, ipsum.</option>
-							<option>Lorem, ipsum.</option>
-						</select>
-					</div>
-				</div>
-
-				<Button>Salvar</Button>
-			</form>
-		</>
-	);
+	return <ExpensesHome {...props} />;
 }
 
 export async function getServerSideProps() {
+	const categoryRepository = new CategoryRepository();
+
+	const allCategories = categoryRepository.getAll();
+
 	const expensesRepository = new ExpenseRepository();
 
 	// Obtém lista de dívidas não quitadas
@@ -92,7 +44,7 @@ export async function getServerSideProps() {
 	const biggestExpense = topExpenses[0];
 
 	// Obtém porcentagem gasta do valor limite da categoria da dívida mais alta
-	const biggestCategorySpent = CategoryRepository.getSpentPercentage(
+	const biggestCategorySpent = categoryRepository.getSpentPercentage(
 		biggestExpense.category,
 		biggestExpense.value,
 	);
@@ -108,6 +60,7 @@ export async function getServerSideProps() {
 		recentExpenses,
 		topExpenses,
 		categoryExpense: biggestExpenseCategoryData,
+		allCategories,
 	});
 
 	return {

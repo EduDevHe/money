@@ -36,7 +36,7 @@
 		height: 100%;
 
 		&:hover {
-			color: var(--secondary-light);
+			color: var(--primary-light);
 		}
 	}
 
@@ -64,8 +64,6 @@
 	height: 100%;
 	min-height: var(--size-1);
 	position: relative;
-	background-color: var(--primary-dark);
-
 	@media screen and (max-width: 990px) {
 		display: flex;
 		flex-direction: column;
@@ -73,6 +71,8 @@
 	}
 
 	& ul {
+		z-index: 10;
+		background-color: var(--primary-dark);
 		position: absolute;
 		display: flex;
 		flex-direction: column;
