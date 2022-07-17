@@ -1,5 +1,5 @@
 import { SelectHTMLAttributes } from "react";
-import { Category } from "../../models/entities/Category";
+import { Category } from "@models/entities/Category";
 import styles from "./styles.module.css";
 
 interface CategorySelectProps extends SelectHTMLAttributes<HTMLSelectElement> {

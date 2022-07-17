@@ -2,7 +2,6 @@ import styles from "./styles.module.css";
 import { NavLinks } from "../NavLinks";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "../../../public/favicon.ico";
 import Link from "next/link";
 import { MenuButton } from "../MenuButton";
 
@@ -30,7 +29,7 @@ function DesktopNavigation() {
 	return (
 		<nav className={styles.desktopNav}>
 			<div className={styles.logo}>
-				<Image src={logo} alt="logo" />
+				<Image width={16} height={16} src="/favicon.ico" alt="logo" />
 			</div>
 
 			<ul>

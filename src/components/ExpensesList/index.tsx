@@ -1,4 +1,4 @@
-import { Expense } from "../../models/entities/Expense";
+import { Expense } from "@models/entities/Expense";
 import { HighlightList } from "../HighlightList";
 import { HighlightListItem } from "../HighlightListItem";
 

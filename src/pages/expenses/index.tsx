@@ -4,7 +4,7 @@ import { Expense } from "../../models/entities/Expense";
 import { CategoryRepository } from "../../models/repositories/CategoryRepository";
 import { ExpenseRepository } from "../../models/repositories/ExpenseRepository";
 import { lean } from "../../utils/Object";
-import { ExpensesHome } from "../../layouts/ExpensesHome";
+import { ExpensesHome } from "../../modules/expenses";
 
 export interface ExpensesProps {
 	recentExpenses: Expense[];

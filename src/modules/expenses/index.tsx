@@ -1,10 +1,10 @@
-import { Button } from "../../components/Button";
-import { Input } from "../../components/Input";
-import { ExpensesList } from "../../components/ExpensesList";
-import { ExpenseWarn } from "../../components/ExpenseWarn";
-import { LineGraph } from "../../components/LineGraph";
-import { CategorySelect } from "../../components/CategorySelect";
-import { ExpensesProps } from "../../pages/expenses";
+import { Button } from "@components/Button";
+import { Input } from "@components/Input";
+import { ExpensesList } from "@components/ExpensesList";
+import { ExpenseWarn } from "@components/ExpenseWarn";
+import { LineGraph } from "@components/LineGraph";
+import { CategorySelect } from "@components/CategorySelect";
+import { ExpensesProps } from "@pages/expenses";
 import styles from "./styles.module.css";
 
 function ExpensesHome(props: ExpensesProps) {

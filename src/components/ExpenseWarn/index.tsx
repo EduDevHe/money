@@ -1,5 +1,5 @@
-import { Category } from "../../models/entities/Category";
-import { toBrl } from "../../utils/Money";
+import { Category } from "@models/entities/Category";
+import { toBrl } from "@utils/Money";
 import styles from "./styles.module.css";
 
 interface ExpenseWarnProps {
